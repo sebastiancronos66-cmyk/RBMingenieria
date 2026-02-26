@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="theme-color" content="#1a1009"/>
+  <title>RBM Constructora | Excelencia sin intermediarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500&family=Cinzel:wght@400;600&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ░░ FLOATING WHATSAPP BUTTON ░░ -->
+  <a href="https://wa.me/573000000000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.124 1.532 5.853L.073 23.927l6.263-1.642A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.007-1.371l-.359-.214-3.72.976 1.001-3.638-.235-.376A9.826 9.826 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182 17.43 2.182 21.818 6.57 21.818 12c0 5.43-4.388 9.818-9.818 9.818z"/>
+    </svg>
+    <span>Cotizar</span>
+  </a>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header id="header">
+    <a href="#inicio" class="header-logo">RBM</a>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="#inicio"    class="nav-link" data-close>Inicio</a></li>
+      <li><a href="#nosotros"  class="nav-link" data-close>Nosotros</a></li>
+      <li><a href="#proyectos" class="nav-link" data-close>Proyectos</a></li>
+      <li><a href="#servicios" class="nav-link" data-close>Servicios</a></li>
+      <li><a href="#contacto"  class="nav-link nav-link--cta" data-close>Cotizar</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       SECCIÓN 1 — HERO
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="inicio" class="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__glow"></div>
+
+    <div class="hero__content">
+      <!-- Emblem — VIDEO LOOP -->
+      <div class="emblem" data-animate="emblem">
+         <video
+          class="emblem__video"
+          id="vidForward"
+          muted playsinline preload="auto"
+          src="img/Img 1737.webm"
+        ></video>
+         <video
+          class="emblem__video emblem__video--hidden"
+          id="vidReverse"
+          muted playsinline preload="auto"
+          src="img/0226.webm"
+        ></video>
+</div>
+
+      <div class="hero__text" data-animate="stagger">
+        <p class="hero__eyebrow">Construcción · Remodelación · Ingeniería</p>
+        <h1 class="hero__title">
+          Construimos con<br/><em>excelencia</em><br/>sin intermediarios
+        </h1>
+        <p class="hero__sub">Cada proyecto, nuestro propio equipo.</p>
+        <a href="#contacto" class="btn btn--gold">
+          Solicitar cotización gratis
+          <svg viewBox="0 0 16 12" fill="none"><path d="M1 6h14M9 1l6 5-6 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Descubre más</span>
+    </div>
+  </section>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     SECCIÓN 2 — NOSOTROS / VIDEO
+░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<section id="nosotros" class="section section--dark">
+  <div class="nosotros-inner">
+
+    <!-- Video enmarcado -->
+    <div class="video-frame-wrap" data-animate>
+      <div class="video-frame-inner">
+        <div class="video-vertical-box">
+          <video
+            class="video-vertical"
+            id="videoVertical"
+            src="img/IMG_1720 (1).MOV"
+            playsinline
+            preload="auto"
+          ></video>
+
+          <div class="video-vertical__overlay" id="videoOverlay">
+            <div class="video-vertical__play">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tagline decorativa -->
+    <div class="video-tagline" data-animate>
+      <div class="video-tagline__line"></div>
+      <span class="video-tagline__text">RBM · Sin intermediarios</span>
+      <div class="video-tagline__line"></div>
+    </div>
+
+  </div>
+</section>
+
+      <!-- Differentiator -->
+      <div class="diff-card" data-animate>
+        <div class="diff-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="diff-card__title">El diferenciador RBM</p>
+          <p class="diff-card__text">
+            A diferencia de otras constructoras, <strong>no subcontratamos nada</strong>. Nuestro propio equipo se encarga de cada etapa — garantizando calidad total, tiempos exactos y resultados perfectos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" data-animate>
+  <div class="stat__div"></div>
+  <div class="stat">
+    <span class="stat__num" data-count="8">0</span>
+    <span class="stat__label">Años de experiencia</span>
+  </div>
+  <div class="stat__div"></div>
+  <div class="stat">
+    <div class="stat__num-wrap">
+      <span class="stat__num" data-count="100">0</span>
+      <span class="stat__plus">%</span>
+    </div>
+    <span class="stat__label">Equipo propio</span>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       SECCIÓN 3 — PROYECTOS
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="proyectos" class="section section--cream">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <span class="section-label">Nuestro trabajo</span>
+        <h2 class="section-title section-title--dark">Proyectos que <em>hablan</em><br/>por sí solos</h2>
+      </div>
+    </div>
+
+    <!-- Horizontal scroll gallery -->
+    <div class="gallery" data-animate>
+      <div class="gallery__track" id="galleryTrack">
+
+        <article class="gallery__card">
+          <div class="gallery__img gallery__img--1">
+            <div class="gallery__placeholder">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><path d="M4 34V14l16-10 16 10v20H4z"/><rect x="14" y="22" width="12" height="12"/></svg>
+            </div>
+          </div>
+          <div class="gallery__info">
+            <span class="gallery__cat">Construcción Civil</span>
+            <h3 class="gallery__name">Edificio Residencial Norte</h3>
+          </div>
+        </article>
+
+        <article class="gallery__card">
+          <div class="gallery__img gallery__img--2">
+            <div class="gallery__placeholder">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 38h36M8 38V18l12-8 12 8v20"/><path d="M16 38v-8h8v8"/></svg>
+            </div>
+          </div>
+          <div class="gallery__info">
+            <span class="gallery__cat">Remodelación</span>
+            <h3 class="gallery__name">Casa Campestre El Rosal</h3>
+          </div>
+        </article>
+
+        <article class="gallery__card">
+          <div class="gallery__img gallery__img--3">
+            <div class="gallery__placeholder">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><rect x="4" y="8" width="32" height="28"/><path d="M4 16h32M12 8v4M20 8v4M28 8v4M12 24h4v12h-4zM24 24h4v12h-4z"/></svg>
+            </div>
+          </div>
+          <div class="gallery__info">
+            <span class="gallery__cat">Obra Comercial</span>
+            <h3 class="gallery__name">Centro Empresarial Plaza</h3>
+          </div>
+        </article>
+
+        <article class="gallery__card">
+          <div class="gallery__img gallery__img--4">
+            <div class="gallery__placeholder">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><circle cx="20" cy="20" r="12"/><path d="M20 8v4M20 28v4M8 20h4M28 20h4M12 12l2.8 2.8M25.2 25.2l2.8 2.8"/></svg>
+            </div>
+          </div>
+          <div class="gallery__info">
+            <span class="gallery__cat">Estudio de Suelo</span>
+            <h3 class="gallery__name">Proyecto Vial Regional</h3>
+          </div>
+        </article>
+
+        <article class="gallery__card">
+          <div class="gallery__img gallery__img--5">
+            <div class="gallery__placeholder">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1"><path d="M4 36l16-28 16 28H4z"/><path d="M20 16v12M14 32h12"/></svg>
+            </div>
+          </div>
+          <div class="gallery__info">
+            <span class="gallery__cat">Diseño Arquitectónico</span>
+            <h3 class="gallery__name">Conjunto Residencial Mirador</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="gallery__dots" id="galleryDots">
+        <button class="gallery__dot gallery__dot--active" data-index="0" aria-label="Slide 1"></button>
+        <button class="gallery__dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="gallery__dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="gallery__dot" data-index="3" aria-label="Slide 4"></button>
+        <button class="gallery__dot" data-index="4" aria-label="Slide 5"></button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       SECCIÓN 4 — SERVICIOS
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="servicios" class="section section--dark">
+    <div class="container">
+
+      <div class="section-head" data-animate>
+        <span class="section-label">Servicios</span>
+        <h2 class="section-title">Todo lo que necesitas,<br/><em>un solo equipo</em></h2>
+      </div>
+
+      <div class="services-list">
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">01</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Construcción de Obras Civiles</h3>
+              <p class="service-item__desc">Edificaciones residenciales, comerciales e industriales con altos estándares de calidad y plazos garantizados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">02</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Remodelaciones y Adecuaciones</h3>
+              <p class="service-item__desc">Transformamos espacios con precisión y creatividad, adaptando cada detalle a su visión.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">03</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Estudios de Suelo</h3>
+              <p class="service-item__desc">Análisis geotécnicos completos para garantizar la seguridad estructural de su proyecto.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">04</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Diseño Arquitectónico</h3>
+              <p class="service-item__desc">Proyectos que integran funcionalidad, estética y normativa por arquitectos con amplia trayectoria.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">05</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="M13 13l6 6"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Topografía</h3>
+              <p class="service-item__desc">Levantamientos topográficos precisos con tecnología de punta para planificación y construcción.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item" data-animate>
+          <div class="service-item__num">06</div>
+          <div class="service-item__body">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <h3 class="service-item__title">Consultoría de Proyectos</h3>
+              <p class="service-item__desc">Asesoría integral en planeación, gestión y supervisión de proyectos de cualquier escala.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░
+       SECCIÓN 5 — CTA / CONTACTO
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="contacto" class="section cta-section">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-wrap" data-animate>
+        <div class="cta-emblem-sm">RBM</div>
+        <p class="cta-eyebrow">¿Tiene un proyecto en mente?</p>
+        <h2 class="cta-title">Hablemos hoy.<br/>La cotización es <em>gratis</em>.</h2>
+        <p class="cta-sub">Respuesta garantizada en menos de 2 horas. Sin compromisos ni letras pequeñas.</p>
+        <a href="https://wa.me/573000000000" class="btn btn--wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.557 4.124 1.532 5.853L.073 23.927l6.263-1.642A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.007-1.371l-.359-.214-3.72.976 1.001-3.638-.235-.376A9.826 9.826 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182 17.43 2.182 21.818 6.57 21.818 12c0 5.43-4.388 9.818-9.818 9.818z"/>
+          </svg>
+          Cotizar por WhatsApp
+        </a>
+        <p class="cta-note">También puede escribirnos por WhatsApp en cualquier momento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <p class="footer__logo">RBM</p>
+    <p class="footer__copy">© 2025 RBM Constructora · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
